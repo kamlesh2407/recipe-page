@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap"');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+:root {
+  --eggshell: hsl(30, 54%, 90%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  -light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--eggshell);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: 'Outfit',sans-serif;
+
+}
+
+p, li ,ul{
+  font-family: 'Outfit',sans-serif;
+}
+
+h1, h3, h4{
+  font-family: 'Young Serif',sans-serif;
+
+}
+
+.container{
+    background-color: var(--white);
+    width: 50%;
+    padding: 25px;
+    border-radius: 15px;
+    justify-items: left;
+}
+
+
+.container > img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.container h1 {
+    margin: 15px 0 15px 0;
+
+}
+
+.container .prep {
+  background-color:var(--rose-white) ;
+  width: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.container .prep h4 {
+    color: var(--dark-raspberry);
+
+
+}
+
+.container .prep ul {
+  padding: 5px;
+}
+
+
+.container .Ingredients{
+  margin-bottom: 20px;
+}
+
+.container .Ingredients h3{
+  margin: 20px 0 20px 0;
+    color: var(--nutmeg);
+
+}
+
+
+
+.container .Ingredients li{
+  padding: 5px;
+  color: var(--dark-charcoal);
+}
+
+
+
+
+.container .instructions{
+  margin-bottom: 20px;
+}
+
+.container .instructions h3{
+  margin: 20px 0 20px 0;
+    color: var(--nutmeg);
+
+}
+
+.container .instructions span .subheading{
+  /* font-weight: bold; */
+  color: var(--dark-charcoal);
+  background-color: var(--dark-charcoal);
+  font-weight: 500;
+}
+
+
+.container .instructions li{
+  padding: 8px;
+  margin: 20px;
+  
+}
+
+.container .instructions {
+  /* color: var(--nutmeg); */
+  
+}
+
+
+
+
+
+.container .nutrition{
+  margin-bottom: 20px;
+}
+
+.container .nutrition h3{
+  margin: 20px 0 20px 0;
+    color: var(--nutmeg);
+
+}
+
+
+.table {
+  margin: 20px;
+  padding: 10px;
+  border-collapse: separate;
+  justify-content: center;
+  text-align: center;
+}
+
+.table td {
+  /* padding-right: 100px; */
+  text-align: center;
+  justify-content: center;
+  padding: 10px 60px;
+  /* border: 1px solid #ddd; */
+}
+
+
+
+@media only screen and (max-width: 375px) {
+  /* Add your custom styles here for screens with width less than or equal to 375px */
+  
+ .container{
+    width: 100%;
+    
+  }
+
+ .container h1{
+    font-size: 1.5em;
+  }
+
+ img{
+  width:100% ;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  object-fit: contain;
+    
+  }
+
+ .container.prep{
+    padding: 15px;
+  }
+
+ .container.prep h4{
+    font-size: 1em;
+  }
+
+ .container.Ingredients h3{
+    font-size: 1em;
+  }
+
+ .container.Ingredients li{
+    font-size: 0.9em;
+  }
+
+ .container.instructions h3{
+    font-size: 1em;
+  }
+
+ .container.instructions li{
+    font-size: 0.9em;
+  }
+
+ .table{
+    margin: 10px;
+    justify-content: center;
+  }
+
+ .table td{
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
